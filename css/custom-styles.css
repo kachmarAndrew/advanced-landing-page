@@ -122,7 +122,16 @@ body {
 .reviews-prev { left: 0; }
 .reviews-next { right: 0; }
 
+/* Mobile: стрілки в нижньому рядку поруч із пагінацією, щоб не перекривати текст відгуку */
 @media (max-width: 639px) {
-  .reviews-prev { left: 4px; }
-  .reviews-next { right: 4px; }
+  .reviews-prev,
+  .reviews-next {
+    top: auto;
+    bottom: 0;
+    margin-top: 0;
+  }
+  .reviews-prev { left: 0; }
+  .reviews-next { right: 0; }
+  .reviews-swiper { padding-bottom: 3.5rem; }
+  .reviews-swiper .swiper-pagination { bottom: 0.9rem; }
 }

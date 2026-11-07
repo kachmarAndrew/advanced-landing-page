@@ -14,4 +14,23 @@ document.addEventListener('DOMContentLoaded', () => {
       loop: true,
     });
   }
+
+  // ───── Swiper.js: слайдер відгуків ─────
+  if (window.Swiper) {
+    new Swiper('.reviews-swiper', {
+      loop: true,
+      spaceBetween: 24,
+      grabCursor: true,
+      keyboard: { enabled: true },
+      autoplay: reduceMotion ? false : { delay: 3500, disableOnInteraction: false, pauseOnMouseEnter: true },
+      pagination: { el: '.reviews-swiper .swiper-pagination', clickable: true },
+      navigation: { nextEl: '.reviews-next', prevEl: '.reviews-prev' },
+      a11y: { prevSlideMessage: 'Попередній відгук', nextSlideMessage: 'Наступний відгук', paginationBulletMessage: 'Перейти до відгуку {{index}}' },
+      breakpoints: {
+        320: { slidesPerView: 1 },
+        768: { slidesPerView: 2 },
+        1024: { slidesPerView: 3 },
+      },
+    });
+  }
 });

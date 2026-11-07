@@ -98,3 +98,31 @@ body {
   .pulse-dot { animation: none; }
   * { transition-duration: 0.01ms !important; }
 }
+
+/* ───── Swiper (ЛР10): тема під дизайн-систему ───── */
+.reviews-swiper {
+  --swiper-theme-color: #e31e24;
+  --swiper-pagination-bullet-inactive-color: #ffffff;
+  --swiper-pagination-bullet-inactive-opacity: 0.4;
+  padding-bottom: 3rem;
+}
+
+.reviews-prev,
+.reviews-next {
+  --swiper-navigation-size: 18px;
+  width: 44px;
+  height: 44px;
+  margin-top: -2.5rem;
+  border-radius: 9999px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  top: 50%;
+}
+
+.reviews-prev { left: 0; }
+.reviews-next { right: 0; }
+
+@media (max-width: 639px) {
+  .reviews-prev { left: 4px; }
+  .reviews-next { right: 4px; }
+}

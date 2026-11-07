@@ -17,6 +17,7 @@
 
     <!-- Tailwind CSS 3.4 — зібрано через CLI (tailwind.config.js містить токени дизайн-системи ЛР4) -->
     <link rel="stylesheet" href="css/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11.1.15/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/custom-styles.css">
 </head>
 <body class="bg-kent-bg font-sans text-white antialiased">
@@ -37,6 +38,7 @@
                 <li><a href="#deals" class="nav-link inline-flex min-h-11 items-center rounded-md px-3 text-sm font-medium text-neutral-300 transition-colors duration-200 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500">Каталог</a></li>
                 <li><a href="#video" class="nav-link inline-flex min-h-11 items-center rounded-md px-3 text-sm font-medium text-neutral-300 transition-colors duration-200 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500">Відео</a></li>
                 <li><a href="#about" class="nav-link inline-flex min-h-11 items-center rounded-md px-3 text-sm font-medium text-neutral-300 transition-colors duration-200 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500">Про нас</a></li>
+                <li><a href="#reviews" class="nav-link inline-flex min-h-11 items-center rounded-md px-3 text-sm font-medium text-neutral-300 transition-colors duration-200 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500">Відгуки</a></li>
                 <li><a href="#faq" class="nav-link inline-flex min-h-11 items-center rounded-md px-3 text-sm font-medium text-neutral-300 transition-colors duration-200 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500">FAQ</a></li>
                 <li><a href="#contacts" class="nav-link inline-flex min-h-11 items-center rounded-md px-3 text-sm font-medium text-neutral-300 transition-colors duration-200 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500">Контакти</a></li>
             </ul>
@@ -56,6 +58,7 @@
             <li><a href="#deals" class="flex min-h-11 items-center rounded-md px-3 text-base font-medium text-neutral-200 transition-colors duration-200 hover:bg-neutral-800 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500">Каталог</a></li>
             <li><a href="#video" class="flex min-h-11 items-center rounded-md px-3 text-base font-medium text-neutral-200 transition-colors duration-200 hover:bg-neutral-800 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500">Відео</a></li>
             <li><a href="#about" class="flex min-h-11 items-center rounded-md px-3 text-base font-medium text-neutral-200 transition-colors duration-200 hover:bg-neutral-800 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500">Про нас</a></li>
+            <li><a href="#reviews" class="flex min-h-11 items-center rounded-md px-3 text-base font-medium text-neutral-200 transition-colors duration-200 hover:bg-neutral-800 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500">Відгуки</a></li>
             <li><a href="#faq" class="flex min-h-11 items-center rounded-md px-3 text-base font-medium text-neutral-200 transition-colors duration-200 hover:bg-neutral-800 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500">FAQ</a></li>
             <li><a href="#contacts" class="flex min-h-11 items-center rounded-md px-3 text-base font-medium text-neutral-200 transition-colors duration-200 hover:bg-neutral-800 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500">Контакти</a></li>
             <li><a href="#deals" class="mt-2 flex min-h-11 items-center justify-center rounded-lg bg-brand-600 px-4 text-base font-semibold transition-colors duration-200 hover:bg-brand-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500">До каталогу</a></li>
@@ -489,6 +492,101 @@
         </div>
     </section>
 
+<!-- ═════════ ВІДГУКИ (Swiper.js) ═════════ -->
+    <section id="reviews" class="bg-kent-alt" aria-labelledby="reviews-heading">
+        <div class="mx-auto max-w-7xl px-4 py-12 sm:px-6 md:py-16 lg:px-8">
+            <h2 id="reviews-heading" class="text-2xl font-extrabold sm:text-3xl lg:text-4xl">Відгуки покупців</h2>
+            <p class="mt-2 text-sm text-neutral-300 md:text-base">Демонстраційні відгуки для навчального проєкту</p>
+            <div class="relative mt-8 px-0 sm:px-12">
+                <div class="swiper reviews-swiper" aria-roledescription="carousel" aria-label="Відгуки покупців">
+                    <div class="swiper-wrapper">
+                <div class="swiper-slide !h-auto">
+                    <article class="flex h-full flex-col rounded-xl border border-kent-border bg-kent-card p-6">
+                        <div class="flex items-center gap-3">
+                            <span class="grid h-12 w-12 shrink-0 place-items-center rounded-full bg-brand-600 font-bold" aria-hidden="true">ОК</span>
+                            <div>
+                                <h3 class="font-semibold">Олена К.</h3>
+                                <p class="text-xs text-neutral-400">Львів · Nike Dunk Low</p>
+                            </div>
+                        </div>
+                        <p class="mt-4 text-sm text-yellow-400" role="img" aria-label="Оцінка: 5 з 5"><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i></p>
+                        <blockquote class="mt-3 text-sm leading-relaxed text-neutral-300 md:text-base">«Знижка реально була: порівняла з графіком ціни за пів року. Дійшло за 9 днів, оригінал, бірки на місці.»</blockquote>
+                    </article>
+                </div>
+                <div class="swiper-slide !h-auto">
+                    <article class="flex h-full flex-col rounded-xl border border-kent-border bg-kent-card p-6">
+                        <div class="flex items-center gap-3">
+                            <span class="grid h-12 w-12 shrink-0 place-items-center rounded-full bg-brand-600 font-bold" aria-hidden="true">ІП</span>
+                            <div>
+                                <h3 class="font-semibold">Ігор П.</h3>
+                                <p class="text-xs text-neutral-400">Київ · Air Jordan 1</p>
+                            </div>
+                        </div>
+                        <p class="mt-4 text-sm text-yellow-400" role="img" aria-label="Оцінка: 5 з 5"><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i></p>
+                        <blockquote class="mt-3 text-sm leading-relaxed text-neutral-300 md:text-base">«Нарешті купив Jordan без валютної картки та посередників. Оплатив у гривнях, Новою поштою отримав за два дні після прибуття.»</blockquote>
+                    </article>
+                </div>
+                <div class="swiper-slide !h-auto">
+                    <article class="flex h-full flex-col rounded-xl border border-kent-border bg-kent-card p-6">
+                        <div class="flex items-center gap-3">
+                            <span class="grid h-12 w-12 shrink-0 place-items-center rounded-full bg-brand-600 font-bold" aria-hidden="true">МС</span>
+                            <div>
+                                <h3 class="font-semibold">Марія С.</h3>
+                                <p class="text-xs text-neutral-400">Одеса · Zara Woman</p>
+                            </div>
+                        </div>
+                        <p class="mt-4 text-sm text-yellow-400" role="img" aria-label="Оцінка: 4 з 5"><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-regular fa-star" aria-hidden="true"></i></p>
+                        <blockquote class="mt-3 text-sm leading-relaxed text-neutral-300 md:text-base">«Класна ідея — всі знижки в одному місці. Мінус лише один: розмірна сітка Zara відрізняється, але конвертер розмірів виручив.»</blockquote>
+                    </article>
+                </div>
+                <div class="swiper-slide !h-auto">
+                    <article class="flex h-full flex-col rounded-xl border border-kent-border bg-kent-card p-6">
+                        <div class="flex items-center gap-3">
+                            <span class="grid h-12 w-12 shrink-0 place-items-center rounded-full bg-brand-600 font-bold" aria-hidden="true">ДВ</span>
+                            <div>
+                                <h3 class="font-semibold">Данило В.</h3>
+                                <p class="text-xs text-neutral-400">Харків · Adidas Samba</p>
+                            </div>
+                        </div>
+                        <p class="mt-4 text-sm text-yellow-400" role="img" aria-label="Оцінка: 5 з 5"><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i></p>
+                        <blockquote class="mt-3 text-sm leading-relaxed text-neutral-300 md:text-base">«Менеджер відповів за годину, уточнив розмір і наявність. Ціна вийшла нижчою, ніж у локальних магазинах.»</blockquote>
+                    </article>
+                </div>
+                <div class="swiper-slide !h-auto">
+                    <article class="flex h-full flex-col rounded-xl border border-kent-border bg-kent-card p-6">
+                        <div class="flex items-center gap-3">
+                            <span class="grid h-12 w-12 shrink-0 place-items-center rounded-full bg-brand-600 font-bold" aria-hidden="true">АТ</span>
+                            <div>
+                                <h3 class="font-semibold">Анастасія Т.</h3>
+                                <p class="text-xs text-neutral-400">Дніпро · Nike Tech Fleece</p>
+                            </div>
+                        </div>
+                        <p class="mt-4 text-sm text-yellow-400" role="img" aria-label="Оцінка: 5 з 5"><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i></p>
+                        <blockquote class="mt-3 text-sm leading-relaxed text-neutral-300 md:text-base">«Заощадила близько 40% на костюмі. Зручно, що видно, з якої платформи товар і коли закінчується акція.»</blockquote>
+                    </article>
+                </div>
+                <div class="swiper-slide !h-auto">
+                    <article class="flex h-full flex-col rounded-xl border border-kent-border bg-kent-card p-6">
+                        <div class="flex items-center gap-3">
+                            <span class="grid h-12 w-12 shrink-0 place-items-center rounded-full bg-brand-600 font-bold" aria-hidden="true">ЮБ</span>
+                            <div>
+                                <h3 class="font-semibold">Юрій Б.</h3>
+                                <p class="text-xs text-neutral-400">Івано-Франківськ · New Balance 550</p>
+                            </div>
+                        </div>
+                        <p class="mt-4 text-sm text-yellow-400" role="img" aria-label="Оцінка: 4 з 5"><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-regular fa-star" aria-hidden="true"></i></p>
+                        <blockquote class="mt-3 text-sm leading-relaxed text-neutral-300 md:text-base">«Все чесно та прозоро. Доставка трохи довша, ніж очікував, але статус замовлення було видно на кожному етапі.»</blockquote>
+                    </article>
+                </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <button type="button" class="swiper-button-prev reviews-prev" aria-label="Попередній відгук"></button>
+                <button type="button" class="swiper-button-next reviews-next" aria-label="Наступний відгук"></button>
+            </div>
+        </div>
+    </section>
+
     <!-- ═════════ FAQ ═════════ -->
     <section id="faq" class="mx-auto max-w-7xl px-4 py-12 sm:px-6 md:py-16 lg:px-8" aria-labelledby="faq-heading">
         <h2 id="faq-heading" class="text-2xl font-extrabold sm:text-3xl lg:text-4xl">Часті питання</h2>
@@ -625,6 +723,7 @@
             <h2 id="footer-info" class="mb-2 font-semibold text-white">Інформація</h2>
             <ul>
                 <li><a href="#how" class="inline-flex min-h-11 items-center rounded text-sm text-neutral-300 transition-colors duration-200 hover:text-white md:text-base focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500">Як це працює</a></li>
+                <li><a href="#reviews" class="inline-flex min-h-11 items-center rounded text-sm text-neutral-300 transition-colors duration-200 hover:text-white md:text-base focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500">Відгуки</a></li>
                 <li><a href="#faq" class="inline-flex min-h-11 items-center rounded text-sm text-neutral-300 transition-colors duration-200 hover:text-white md:text-base focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500">Часті питання</a></li>
                 <li><a href="#contacts" class="inline-flex min-h-11 items-center rounded text-sm text-neutral-300 transition-colors duration-200 hover:text-white md:text-base focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500">Контакти</a></li>
             </ul>
@@ -651,6 +750,7 @@
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11.1.15/swiper-bundle.min.js" defer></script>
 <script src="js/contact-validation.js"></script>
 <script src="js/main.js"></script>
 <script>

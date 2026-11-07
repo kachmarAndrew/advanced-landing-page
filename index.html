@@ -18,6 +18,7 @@
     <!-- Tailwind CSS 3.4 — зібрано через CLI (tailwind.config.js містить токени дизайн-системи ЛР4) -->
     <link rel="stylesheet" href="css/tailwind.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11.1.15/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.36/dist/fancybox/fancybox.css">
     <link rel="stylesheet" href="css/custom-styles.css">
 </head>
 <body class="bg-kent-bg font-sans text-white antialiased">
@@ -39,6 +40,7 @@
                 <li><a href="#video" class="nav-link inline-flex min-h-11 items-center rounded-md px-3 text-sm font-medium text-neutral-300 transition-colors duration-200 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500">Відео</a></li>
                 <li><a href="#about" class="nav-link inline-flex min-h-11 items-center rounded-md px-3 text-sm font-medium text-neutral-300 transition-colors duration-200 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500">Про нас</a></li>
                 <li><a href="#reviews" class="nav-link inline-flex min-h-11 items-center rounded-md px-3 text-sm font-medium text-neutral-300 transition-colors duration-200 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500">Відгуки</a></li>
+                <li><a href="#gallery" class="nav-link inline-flex min-h-11 items-center rounded-md px-3 text-sm font-medium text-neutral-300 transition-colors duration-200 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500">Галерея</a></li>
                 <li><a href="#faq" class="nav-link inline-flex min-h-11 items-center rounded-md px-3 text-sm font-medium text-neutral-300 transition-colors duration-200 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500">FAQ</a></li>
                 <li><a href="#contacts" class="nav-link inline-flex min-h-11 items-center rounded-md px-3 text-sm font-medium text-neutral-300 transition-colors duration-200 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500">Контакти</a></li>
             </ul>
@@ -59,6 +61,7 @@
             <li><a href="#video" class="flex min-h-11 items-center rounded-md px-3 text-base font-medium text-neutral-200 transition-colors duration-200 hover:bg-neutral-800 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500">Відео</a></li>
             <li><a href="#about" class="flex min-h-11 items-center rounded-md px-3 text-base font-medium text-neutral-200 transition-colors duration-200 hover:bg-neutral-800 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500">Про нас</a></li>
             <li><a href="#reviews" class="flex min-h-11 items-center rounded-md px-3 text-base font-medium text-neutral-200 transition-colors duration-200 hover:bg-neutral-800 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500">Відгуки</a></li>
+            <li><a href="#gallery" class="flex min-h-11 items-center rounded-md px-3 text-base font-medium text-neutral-200 transition-colors duration-200 hover:bg-neutral-800 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500">Галерея</a></li>
             <li><a href="#faq" class="flex min-h-11 items-center rounded-md px-3 text-base font-medium text-neutral-200 transition-colors duration-200 hover:bg-neutral-800 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500">FAQ</a></li>
             <li><a href="#contacts" class="flex min-h-11 items-center rounded-md px-3 text-base font-medium text-neutral-200 transition-colors duration-200 hover:bg-neutral-800 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500">Контакти</a></li>
             <li><a href="#deals" class="mt-2 flex min-h-11 items-center justify-center rounded-lg bg-brand-600 px-4 text-base font-semibold transition-colors duration-200 hover:bg-brand-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500">До каталогу</a></li>
@@ -492,7 +495,40 @@
         </div>
     </section>
 
-<!-- ═════════ ВІДГУКИ (Swiper.js) ═════════ -->
+<!-- ═════════ ГАЛЕРЕЯ (Fancybox) ═════════ -->
+    <section id="gallery" class="mx-auto max-w-7xl px-4 py-12 sm:px-6 md:py-16 lg:px-8" aria-labelledby="gallery-heading">
+        <h2 id="gallery-heading" class="text-2xl font-extrabold sm:text-3xl lg:text-4xl">Галерея колекції</h2>
+        <p class="mt-2 text-sm text-neutral-300 md:text-base">Натисніть на зображення, щоб відкрити його на весь екран. Гортайте стрілками, масштабуйте колесом миші або щипком.</p>
+        <ul class="mt-8 grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-3 lg:grid-cols-5">
+                <li>
+                    <a href="assets/images/sneakers-collage.webp" data-fancybox="kent-gallery" data-caption="Колаж кросівок: добірка моделей Jordan, Nike та Adidas" class="group block overflow-hidden rounded-xl border border-kent-border focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500" aria-label="Відкрити зображення: Колаж кросівок: добірка моделей Jordan, Nike та Adidas">
+                        <img src="assets/images/sneakers-collage.webp" alt="Колаж кросівок: добірка моделей Jordan, Nike та Adidas" width="400" height="400" loading="lazy" class="aspect-square w-full object-cover transition duration-300 group-hover:scale-105 motion-reduce:transition-none">
+                    </a>
+                </li>
+                <li>
+                    <a href="assets/images/travis-painting.webp" data-fancybox="kent-gallery" data-caption="Арт-ілюстрація в стилі стрітвір" class="group block overflow-hidden rounded-xl border border-kent-border focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500" aria-label="Відкрити зображення: Арт-ілюстрація в стилі стрітвір">
+                        <img src="assets/images/travis-painting.webp" alt="Арт-ілюстрація в стилі стрітвір" width="400" height="400" loading="lazy" class="aspect-square w-full object-cover transition duration-300 group-hover:scale-105 motion-reduce:transition-none">
+                    </a>
+                </li>
+                <li>
+                    <a href="assets/images/jordan-23-poster.webp" data-fancybox="kent-gallery" data-caption="Постер із джерсі №23" class="group block overflow-hidden rounded-xl border border-kent-border focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500" aria-label="Відкрити зображення: Постер із джерсі №23">
+                        <img src="assets/images/jordan-23-poster.webp" alt="Постер із джерсі №23" width="400" height="400" loading="lazy" class="aspect-square w-full object-cover transition duration-300 group-hover:scale-105 motion-reduce:transition-none">
+                    </a>
+                </li>
+                <li>
+                    <a href="assets/images/jordan-jump-poster.webp" data-fancybox="kent-gallery" data-caption="Ретро-постер: легендарний стрибок" class="group block overflow-hidden rounded-xl border border-kent-border focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500" aria-label="Відкрити зображення: Ретро-постер: легендарний стрибок">
+                        <img src="assets/images/jordan-jump-poster.webp" alt="Ретро-постер: легендарний стрибок" width="400" height="400" loading="lazy" class="aspect-square w-full object-cover transition duration-300 group-hover:scale-105 motion-reduce:transition-none">
+                    </a>
+                </li>
+                <li>
+                    <a href="assets/images/hero-bg.webp" data-fancybox="kent-gallery" data-caption="Атмосферний фон колекції KENT" class="group block overflow-hidden rounded-xl border border-kent-border focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500" aria-label="Відкрити зображення: Атмосферний фон колекції KENT">
+                        <img src="assets/images/hero-bg.webp" alt="Атмосферний фон колекції KENT" width="400" height="400" loading="lazy" class="aspect-square w-full object-cover transition duration-300 group-hover:scale-105 motion-reduce:transition-none">
+                    </a>
+                </li>
+        </ul>
+    </section>
+
+    <!-- ═════════ ВІДГУКИ (Swiper.js) ═════════ -->
     <section id="reviews" class="bg-kent-alt" aria-labelledby="reviews-heading">
         <div class="mx-auto max-w-7xl px-4 py-12 sm:px-6 md:py-16 lg:px-8">
             <h2 id="reviews-heading" class="text-2xl font-extrabold sm:text-3xl lg:text-4xl">Відгуки покупців</h2>
@@ -724,6 +760,7 @@
             <ul>
                 <li><a href="#how" class="inline-flex min-h-11 items-center rounded text-sm text-neutral-300 transition-colors duration-200 hover:text-white md:text-base focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500">Як це працює</a></li>
                 <li><a href="#reviews" class="inline-flex min-h-11 items-center rounded text-sm text-neutral-300 transition-colors duration-200 hover:text-white md:text-base focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500">Відгуки</a></li>
+                <li><a href="#gallery" class="inline-flex min-h-11 items-center rounded text-sm text-neutral-300 transition-colors duration-200 hover:text-white md:text-base focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500">Галерея</a></li>
                 <li><a href="#faq" class="inline-flex min-h-11 items-center rounded text-sm text-neutral-300 transition-colors duration-200 hover:text-white md:text-base focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500">Часті питання</a></li>
                 <li><a href="#contacts" class="inline-flex min-h-11 items-center rounded text-sm text-neutral-300 transition-colors duration-200 hover:text-white md:text-base focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500">Контакти</a></li>
             </ul>
@@ -751,6 +788,7 @@
 
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11.1.15/swiper-bundle.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.36/dist/fancybox/fancybox.umd.js" defer></script>
 <script src="js/contact-validation.js"></script>
 <script src="js/main.js"></script>
 <script>

@@ -33,4 +33,18 @@ document.addEventListener('DOMContentLoaded', () => {
       },
     });
   }
+
+  // ───── Fancybox v5: галерея з масштабуванням ─────
+  if (window.Fancybox) {
+    Fancybox.bind("[data-fancybox='kent-gallery']", {
+      Carousel: { Transition: 'fade' },
+      Images: { Panzoom: { maxScale: 3 } },
+      l10n: {
+        CLOSE: 'Закрити', NEXT: 'Наступне', PREV: 'Попереднє', MODAL: 'Закрити вікно можна клавішею Esc',
+        ERROR: 'Сталася помилка, спробуйте пізніше', IMAGE_ERROR: 'Зображення не знайдено',
+        TOGGLE_ZOOM: 'Змінити масштаб', TOGGLE_THUMBS: 'Мініатюри', TOGGLE_SLIDESHOW: 'Слайдшоу',
+        TOGGLE_FULLSCREEN: 'На весь екран', DOWNLOAD: 'Завантажити',
+      },
+    });
+  }
 });
